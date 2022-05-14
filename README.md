@@ -4,7 +4,7 @@ Note: Do this manually using AWS Management Console now, later you can do this u
 
 Example: I created a bucket named 'genomic-bucker-for-kari' and uploaded the 'static-data' folder you sent me:
 
-![img_1.png](img_1.png)
+![](pics/img_1.png)
 
 3. Modify the .env file in this repo  with:
 ```
