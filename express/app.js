@@ -36,9 +36,5 @@ app.get("/testData/:foldername", async (req, res) => {
     res.send(x.Body)
 });
 
-app.get('/', (req, res) => {
-    res.status(200).send('hello world!');
-});
-
 module.exports = app;
 
