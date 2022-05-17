@@ -10,7 +10,7 @@ const app = express();
 
 app.use(bodyParser.json())
 
-app.listen(8000);
+// app.listen(8000);
 
 // add these to the .env file
 aws.config.update({
@@ -34,4 +34,11 @@ app.get("/testData/:foldername", async (req, res) => {
     console.log(folderName)
     let x = await s3.getObject({ Bucket: BUCKET, Key: "static-data/tests/" + folderName + "/data.json" }).promise();
     res.send(x.Body)
-})
+});
+
+app.get('/', (req, res) => {
+    res.status(200).send('hello world!');
+});
+
+module.exports = app;
+
